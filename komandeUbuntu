@@ -1,0 +1,16 @@
+mkdir UvR
+cd UvR
+touch vaje1.txt
+ls     #da vidimo da je nardilo
+cal 3 2002 > vaje1.txt 					 #spremeni tukaj tocka 3.
+touch -t 202112141700 vaje1.txt  		 #spremeni tukaj tocka 4.
+echo -e v\nr\ns\nt\na					 #spremeni crke v,r,s,t,a (poljubna vsebina)
+head vaje2.txt && tail vaje2.txt
+cd ~
+mkdir UvR_vaje
+cd UvR
+cp vaje* UvR_vaje
+cd ~
+rm -rf UvR
+cd UvR
+vaje2.txt >> vaje1.txt
